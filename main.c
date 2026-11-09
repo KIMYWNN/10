@@ -1,10 +1,21 @@
 #include <stdio.h>
-#include <string.h>
 
 int main(void) {
-    char str[30] = "happy C programming";
+    int i = 0;
+    char str[4];
 
-    printf("문자열 \"%s\"의 길이 : %i", str, strlen(str));
+    str[0] = 'a';
+    str[1] = 'b';
+    str[2] = 'c';
+    str[3] = '\0';
+
+    while (str[i] != '\0') {
+        printf("%c", str[i]);
+        i++;
+    }
+
+    printf("\n");
+    printf("%s\n", str);
 
     return 0;
 }
